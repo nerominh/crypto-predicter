@@ -210,7 +210,7 @@ def main():
                 trade_profit = is_trade_complete(trade, current_price)
                 
                 if trade_loss:
-                                # Use stored trade index - should always exist since we assign it when creating trades
+                                      # Use stored trade index - should always exist since we assign it when creating trades
                     trade_index = trade.get('index', None)
                     if trade_index is None:
                         # Fallback: assign index if somehow missing (shouldn't happen)
